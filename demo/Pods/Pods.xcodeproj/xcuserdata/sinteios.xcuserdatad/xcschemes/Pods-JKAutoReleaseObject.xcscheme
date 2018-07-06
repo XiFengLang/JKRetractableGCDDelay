@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B72C0F77BE414B94A9D488E5667BB080"
+               BlueprintIdentifier = "18F14E8FCD69F18142C5D65D374AA2CE"
                BlueprintName = "Pods-JKAutoReleaseObject"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-JKAutoReleaseObject.a">

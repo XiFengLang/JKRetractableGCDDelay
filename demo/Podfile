@@ -4,6 +4,6 @@
 
 target 'JKAutoReleaseObject' do
   
-  pod 'JKAutoReleaseObject', '~> 1.0.0'
+  pod 'JKRetractableGCDDelay', '~> 1.0.0'
 
 end

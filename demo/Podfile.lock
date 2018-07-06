@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 0f80783e11ef473f8a25338af20ed3d4f471d8e8
+PODS:
+  - JKRetractableGCDDelay (1.0.0)
+
+DEPENDENCIES:
+  - JKRetractableGCDDelay (~> 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JKRetractableGCDDelay
+
+SPEC CHECKSUMS:
+  JKRetractableGCDDelay: 5bd4aa18e31fc92fb1cea0f5d1b30e0f727104a9
+
+PODFILE CHECKSUM: 24fefb1ae456f909bd4b09fb1505ab8e031e2272
 
 COCOAPODS: 1.5.3

@@ -3,6 +3,15 @@
 https://github.com/Spaceman-Labs/Dispatch-Cancel)
 
 
+###CocoaPods
+
+```C
+ source 'https://github.com/CocoaPods/Specs.git'
+ 
+ pod 'JKRetractableGCDDelay', '~> 1.0.0'
+```
+
+
 *. 使用performSelector执行延迟任务，以及取消延迟任务。
 
 ```Object-C
