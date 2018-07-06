@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860D67D61DE15558B22D263C /* libPods-JKAutoReleaseObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F98CFA4BF5ABE72A7CE4E2A /* libPods-JKAutoReleaseObject.a */; };
 		9F2B79D31E1FA18D002B2323 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B79D21E1FA18D002B2323 /* main.m */; };
 		9F2B79D61E1FA18D002B2323 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B79D51E1FA18D002B2323 /* AppDelegate.m */; };
 		9F2B79D91E1FA18D002B2323 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B79D81E1FA18D002B2323 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F98CFA4BF5ABE72A7CE4E2A /* libPods-JKAutoReleaseObject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKAutoReleaseObject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D73F4D5E09808A24A0A913 /* Pods-JKAutoReleaseObject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKAutoReleaseObject.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKAutoReleaseObject/Pods-JKAutoReleaseObject.release.xcconfig"; sourceTree = "<group>"; };
 		9F2B79CE1E1FA18D002B2323 /* JKAutoReleaseObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKAutoReleaseObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2B79D21E1FA18D002B2323 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F2B79D41E1FA18D002B2323 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		9FD4E3381E23795D00041F2F /* JKTestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTestObj.m; sourceTree = "<group>"; };
 		9FD4E34C1E24CD8200041F2F /* DelayTaskTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelayTaskTestVC.h; sourceTree = "<group>"; };
 		9FD4E34D1E24CD8200041F2F /* DelayTaskTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelayTaskTestVC.m; sourceTree = "<group>"; };
+		AB730950C134B46EC6B67F96 /* Pods-JKAutoReleaseObject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKAutoReleaseObject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKAutoReleaseObject/Pods-JKAutoReleaseObject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860D67D61DE15558B22D263C /* libPods-JKAutoReleaseObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219889F60F3F1568102259AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F98CFA4BF5ABE72A7CE4E2A /* libPods-JKAutoReleaseObject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F2B79C51E1FA18D002B2323 = {
 			isa = PBXGroup;
 			children = (
 				9F2B79D01E1FA18D002B2323 /* JKAutoReleaseObject */,
 				9F2B79CF1E1FA18D002B2323 /* Products */,
+				B7FE6AD469A29A3160D7348C /* Pods */,
+				219889F60F3F1568102259AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +117,15 @@
 			path = "NSObject+GCDDelayTask";
 			sourceTree = "<group>";
 		};
+		B7FE6AD469A29A3160D7348C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB730950C134B46EC6B67F96 /* Pods-JKAutoReleaseObject.debug.xcconfig */,
+				85D73F4D5E09808A24A0A913 /* Pods-JKAutoReleaseObject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F2B79E51E1FA18D002B2323 /* Build configuration list for PBXNativeTarget "JKAutoReleaseObject" */;
 			buildPhases = (
+				95654B2A830962BD52D1756E /* [CP] Check Pods Manifest.lock */,
 				9F2B79CA1E1FA18D002B2323 /* Sources */,
 				9F2B79CB1E1FA18D002B2323 /* Frameworks */,
 				9F2B79CC1E1FA18D002B2323 /* Resources */,
@@ -168,6 +193,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95654B2A830962BD52D1756E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JKAutoReleaseObject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F2B79CA1E1FA18D002B2323 /* Sources */ = {
@@ -297,6 +343,7 @@
 		};
 		9F2B79E61E1FA18D002B2323 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB730950C134B46EC6B67F96 /* Pods-JKAutoReleaseObject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5C5VZ6884A;
@@ -310,6 +357,7 @@
 		};
 		9F2B79E71E1FA18D002B2323 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D73F4D5E09808A24A0A913 /* Pods-JKAutoReleaseObject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5C5VZ6884A;
