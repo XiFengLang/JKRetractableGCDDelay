@@ -15,15 +15,15 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "JKAutoReleaseObject"
+  s.name         = "JKRetractableGCDDelay"
   s.version      = "1.0.0"
-  s.summary      = "JKAutoReleaseObject可取消GCD延迟操作"
+  s.summary      = "JKRetractableGCDDelay可取消GCD延迟操作"
 
-  s.homepage     = "https://github.com/XiFengLang/JKAutoReleaseObject"
+  s.homepage     = "https://github.com/XiFengLang/JKRetractableGCDDelay"
   
   s.license      = "MIT"
   s.author       = { "XiFengLang" => "lang131jp@vip.qq.com" }
-  s.source       = { :git => "https://github.com/XiFengLang/JKAutoReleaseObject.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/XiFengLang/JKRetractableGCDDelay.git", :tag => "#{s.version}" }
 
   s.platform     = :ios,"8.0"
   s.framework    = "UIKit"

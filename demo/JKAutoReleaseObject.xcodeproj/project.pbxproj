@@ -14,7 +14,6 @@
 		9F2B79DC1E1FA18D002B2323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2B79DA1E1FA18D002B2323 /* Main.storyboard */; };
 		9F2B79DE1E1FA18D002B2323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2B79DD1E1FA18D002B2323 /* Assets.xcassets */; };
 		9F2B79E11E1FA18D002B2323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2B79DF1E1FA18D002B2323 /* LaunchScreen.storyboard */; };
-		9F4E28431E9B7B040025D7BD /* NSObject+GCDDelayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E28421E9B7B040025D7BD /* NSObject+GCDDelayTask.m */; };
 		9FD4E3391E23795D00041F2F /* JKTestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD4E3381E23795D00041F2F /* JKTestObj.m */; };
 		9FD4E34E1E24CD8200041F2F /* DelayTaskTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD4E34D1E24CD8200041F2F /* DelayTaskTestVC.m */; };
 /* End PBXBuildFile section */
@@ -32,8 +31,6 @@
 		9F2B79DD1E1FA18D002B2323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2B79E01E1FA18D002B2323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2B79E21E1FA18D002B2323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F4E28411E9B7B040025D7BD /* NSObject+GCDDelayTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCDDelayTask.h"; sourceTree = "<group>"; };
-		9F4E28421E9B7B040025D7BD /* NSObject+GCDDelayTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCDDelayTask.m"; sourceTree = "<group>"; };
 		9FD4E3371E23795D00041F2F /* JKTestObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTestObj.h; sourceTree = "<group>"; };
 		9FD4E3381E23795D00041F2F /* JKTestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTestObj.m; sourceTree = "<group>"; };
 		9FD4E34C1E24CD8200041F2F /* DelayTaskTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelayTaskTestVC.h; sourceTree = "<group>"; };
@@ -82,7 +79,6 @@
 		9F2B79D01E1FA18D002B2323 /* JKAutoReleaseObject */ = {
 			isa = PBXGroup;
 			children = (
-				9F4E28401E9B7B040025D7BD /* NSObject+GCDDelayTask */,
 				9F2B79D41E1FA18D002B2323 /* AppDelegate.h */,
 				9F2B79D51E1FA18D002B2323 /* AppDelegate.m */,
 				9F2B79D71E1FA18D002B2323 /* ViewController.h */,
@@ -106,15 +102,6 @@
 				9F2B79D21E1FA18D002B2323 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9F4E28401E9B7B040025D7BD /* NSObject+GCDDelayTask */ = {
-			isa = PBXGroup;
-			children = (
-				9F4E28411E9B7B040025D7BD /* NSObject+GCDDelayTask.h */,
-				9F4E28421E9B7B040025D7BD /* NSObject+GCDDelayTask.m */,
-			);
-			path = "NSObject+GCDDelayTask";
 			sourceTree = "<group>";
 		};
 		B7FE6AD469A29A3160D7348C /* Pods */ = {
@@ -223,7 +210,6 @@
 				9FD4E3391E23795D00041F2F /* JKTestObj.m in Sources */,
 				9F2B79D91E1FA18D002B2323 /* ViewController.m in Sources */,
 				9F2B79D61E1FA18D002B2323 /* AppDelegate.m in Sources */,
-				9F4E28431E9B7B040025D7BD /* NSObject+GCDDelayTask.m in Sources */,
 				9F2B79D31E1FA18D002B2323 /* main.m in Sources */,
 				9FD4E34E1E24CD8200041F2F /* DelayTaskTestVC.m in Sources */,
 			);
