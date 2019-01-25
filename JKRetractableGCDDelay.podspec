@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JKRetractableGCDDelay"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "JKRetractableGCDDelay可取消GCD延迟操作"
 
   s.homepage     = "https://github.com/XiFengLang/JKRetractableGCDDelay"
