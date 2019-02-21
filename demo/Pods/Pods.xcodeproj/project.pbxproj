@@ -7,66 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		107CD5BA8BFBCEBB0A8CD095C223DB39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		1939D6B24C7E48510290DC834C0E7DCB /* Pods-JKAutoReleaseObject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73D536FEA8C94E3F7C6486A0854C24 /* Pods-JKAutoReleaseObject-dummy.m */; };
-		49723508345EDE5D9E64E598DD46352E /* NSObject+GCDDelayTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8D6CF3C53276DE2534F82E1974542E /* NSObject+GCDDelayTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4FE771B1F7F4DCF17689D314844F166C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		874E1AA9482838B77B6C3FD800C0CB4F /* JKRetractableGCDDelay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F8F43141B18C6A99E51E7C6EF4C10 /* JKRetractableGCDDelay-dummy.m */; };
-		A1DA6E248F698516F32BBA62F292A953 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		EBCE3C14A9FF08829BB3264D1317F9ED /* NSObject+GCDDelayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C3D040A0C1B736F065715F7800C571 /* NSObject+GCDDelayTask.m */; };
+		15EB468E5FC501CD2547856210B27029 /* Pods-JKAutoReleaseObject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE37C507FEC6782E2AB543F81D1AA0C /* Pods-JKAutoReleaseObject-dummy.m */; };
+		2D034B01FA254B16094BCE4101710443 /* JKRetractableGCDDelay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F8F43141B18C6A99E51E7C6EF4C10 /* JKRetractableGCDDelay-dummy.m */; };
+		37113348FB1B4513CC33B4BE7C0FB516 /* NSObject+GCDDelayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C3D040A0C1B736F065715F7800C571 /* NSObject+GCDDelayTask.m */; };
+		C6466360F70D7FE424524B6A2184BBD5 /* NSObject+GCDDelayTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8D6CF3C53276DE2534F82E1974542E /* NSObject+GCDDelayTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7941B662071EC1EF7C80CE3B2FB6B401 /* PBXContainerItemProxy */ = {
+		431E3F8C01D93AF974768970A3503C3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 03A569DFB9AFBDB882446987F162A9EA;
+			remoteGlobalIDString = 64815467B6BC03D86E2C5A1FEC6863D8;
 			remoteInfo = JKRetractableGCDDelay;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DE37C507FEC6782E2AB543F81D1AA0C /* Pods-JKAutoReleaseObject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKAutoReleaseObject-dummy.m"; sourceTree = "<group>"; };
 		1E3AEFA07D7C390F8CEDB2EDD8AA96F0 /* libPods-JKAutoReleaseObject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JKAutoReleaseObject.a"; path = "libPods-JKAutoReleaseObject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E737A790EAA8148AB1AB49C1D717CFA /* Pods-JKAutoReleaseObject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKAutoReleaseObject.debug.xcconfig"; sourceTree = "<group>"; };
 		213C42056C5E237EFD9B7EEF958D7A21 /* JKRetractableGCDDelay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKRetractableGCDDelay.xcconfig; sourceTree = "<group>"; };
-		32F3D185E6DA348A6DBCC4126694F8FC /* Pods-JKAutoReleaseObject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKAutoReleaseObject.debug.xcconfig"; sourceTree = "<group>"; };
-		52F71056FA392E80B7C43F93A1353538 /* Pods-JKAutoReleaseObject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKAutoReleaseObject-acknowledgements.plist"; sourceTree = "<group>"; };
+		30C52B31C2CA46488B5CCF0BF229C5D5 /* Pods-JKAutoReleaseObject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKAutoReleaseObject.release.xcconfig"; sourceTree = "<group>"; };
 		58C3D040A0C1B736F065715F7800C571 /* NSObject+GCDDelayTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GCDDelayTask.m"; path = "src/NSObject+GCDDelayTask.m"; sourceTree = "<group>"; };
-		6B73D536FEA8C94E3F7C6486A0854C24 /* Pods-JKAutoReleaseObject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKAutoReleaseObject-dummy.m"; sourceTree = "<group>"; };
 		6F0F8F43141B18C6A99E51E7C6EF4C10 /* JKRetractableGCDDelay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKRetractableGCDDelay-dummy.m"; sourceTree = "<group>"; };
-		773F5C2E9258BB3C61F46D8FE30A24CC /* Pods-JKAutoReleaseObject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKAutoReleaseObject-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		937AC4FA33B6EC13D7A78CE22ECCB427 /* Pods-JKAutoReleaseObject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKAutoReleaseObject-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9E8D6CF3C53276DE2534F82E1974542E /* NSObject+GCDDelayTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+GCDDelayTask.h"; path = "src/NSObject+GCDDelayTask.h"; sourceTree = "<group>"; };
-		A84ED1587409807B03B623ECDBC8F8C3 /* Pods-JKAutoReleaseObject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKAutoReleaseObject-resources.sh"; sourceTree = "<group>"; };
-		B1F9ED1DE97E1B1B5C062E721C66A299 /* Pods-JKAutoReleaseObject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKAutoReleaseObject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B35DCCFF640324DF6681CDDBE7C0639E /* Pods-JKAutoReleaseObject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKAutoReleaseObject.release.xcconfig"; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDC6BEFD1C7388861CB9B341A0A2A88B /* Pods-JKAutoReleaseObject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKAutoReleaseObject-acknowledgements.plist"; sourceTree = "<group>"; };
 		C5BD8D47FA16317EE2E5ABC59E002150 /* libJKRetractableGCDDelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJKRetractableGCDDelay.a; path = libJKRetractableGCDDelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E8CCBBB123357286347396D6A1423B03 /* JKRetractableGCDDelay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKRetractableGCDDelay-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1902C0AB8EF59B843B9FF0AC0CB11244 /* Frameworks */ = {
+		0741474BC3DF3C42DA1386EDF75C686D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DA6E248F698516F32BBA62F292A953 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39A94ACBA11500B6E5ACF499ECB0A52E /* Frameworks */ = {
+		C8B3147A87593E35E05199FE14A41275 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				107CD5BA8BFBCEBB0A8CD095C223DB39 /* Foundation.framework in Frameworks */,
-				4FE771B1F7F4DCF17689D314844F166C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16EA55AA715257F188E2FD7DD406148C /* Pods-JKAutoReleaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				937AC4FA33B6EC13D7A78CE22ECCB427 /* Pods-JKAutoReleaseObject-acknowledgements.markdown */,
+				BDC6BEFD1C7388861CB9B341A0A2A88B /* Pods-JKAutoReleaseObject-acknowledgements.plist */,
+				1DE37C507FEC6782E2AB543F81D1AA0C /* Pods-JKAutoReleaseObject-dummy.m */,
+				1E737A790EAA8148AB1AB49C1D717CFA /* Pods-JKAutoReleaseObject.debug.xcconfig */,
+				30C52B31C2CA46488B5CCF0BF229C5D5 /* Pods-JKAutoReleaseObject.release.xcconfig */,
+			);
+			name = "Pods-JKAutoReleaseObject";
+			path = "Target Support Files/Pods-JKAutoReleaseObject";
+			sourceTree = "<group>";
+		};
 		1B9E61E6F1F822FECE55EBB5AEDF092F /* JKRetractableGCDDelay */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,23 +86,6 @@
 			);
 			name = JKRetractableGCDDelay;
 			path = JKRetractableGCDDelay;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		735D7A061077D25ACD6EB6143F32A7EB /* Products */ = {
@@ -107,35 +100,20 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				D6D18CBD5421FA249F81E77687FF1E10 /* Pods */,
 				735D7A061077D25ACD6EB6143F32A7EB /* Products */,
-				83522563AB2FCA0642C42D44134BFF02 /* Targets Support Files */,
+				7DD9CEE3D8136B3CDBBF52B8ED5DF536 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83522563AB2FCA0642C42D44134BFF02 /* Targets Support Files */ = {
+		7DD9CEE3D8136B3CDBBF52B8ED5DF536 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				84BF265F102F05EC2314BDF755B9F035 /* Pods-JKAutoReleaseObject */,
+				16EA55AA715257F188E2FD7DD406148C /* Pods-JKAutoReleaseObject */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		84BF265F102F05EC2314BDF755B9F035 /* Pods-JKAutoReleaseObject */ = {
-			isa = PBXGroup;
-			children = (
-				B1F9ED1DE97E1B1B5C062E721C66A299 /* Pods-JKAutoReleaseObject-acknowledgements.markdown */,
-				52F71056FA392E80B7C43F93A1353538 /* Pods-JKAutoReleaseObject-acknowledgements.plist */,
-				6B73D536FEA8C94E3F7C6486A0854C24 /* Pods-JKAutoReleaseObject-dummy.m */,
-				773F5C2E9258BB3C61F46D8FE30A24CC /* Pods-JKAutoReleaseObject-frameworks.sh */,
-				A84ED1587409807B03B623ECDBC8F8C3 /* Pods-JKAutoReleaseObject-resources.sh */,
-				32F3D185E6DA348A6DBCC4126694F8FC /* Pods-JKAutoReleaseObject.debug.xcconfig */,
-				B35DCCFF640324DF6681CDDBE7C0639E /* Pods-JKAutoReleaseObject.release.xcconfig */,
-			);
-			name = "Pods-JKAutoReleaseObject";
-			path = "Target Support Files/Pods-JKAutoReleaseObject";
 			sourceTree = "<group>";
 		};
 		CFEB22F8A5DB7C741751F914F3E8479A /* Support Files */ = {
@@ -160,24 +138,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		74A6948DA9290D5B36C701BFA6301CA6 /* Headers */ = {
+		3A1F0D7C340C57C21537786CA4ADDC18 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49723508345EDE5D9E64E598DD46352E /* NSObject+GCDDelayTask.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C8E1764FA3C9471075C3DE53619B55F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6466360F70D7FE424524B6A2184BBD5 /* NSObject+GCDDelayTask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03A569DFB9AFBDB882446987F162A9EA /* JKRetractableGCDDelay */ = {
+		64815467B6BC03D86E2C5A1FEC6863D8 /* JKRetractableGCDDelay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA857E434239F80D594F171B8160CB84 /* Build configuration list for PBXNativeTarget "JKRetractableGCDDelay" */;
+			buildConfigurationList = 850DDBE69383605285334D90C611382B /* Build configuration list for PBXNativeTarget "JKRetractableGCDDelay" */;
 			buildPhases = (
-				DEA6BBD12D81E9E627E4A0DA5A4644AC /* Sources */,
-				39A94ACBA11500B6E5ACF499ECB0A52E /* Frameworks */,
-				74A6948DA9290D5B36C701BFA6301CA6 /* Headers */,
+				6C8E1764FA3C9471075C3DE53619B55F /* Headers */,
+				C5EFBFB6E4B2C75AC9F0885C4A8A9935 /* Sources */,
+				C8B3147A87593E35E05199FE14A41275 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,17 +173,18 @@
 			productReference = C5BD8D47FA16317EE2E5ABC59E002150 /* libJKRetractableGCDDelay.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		18F14E8FCD69F18142C5D65D374AA2CE /* Pods-JKAutoReleaseObject */ = {
+		A1AC41921144C84057FFBF9FCE1503FD /* Pods-JKAutoReleaseObject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC7088CAAEE31E1B9E2017FC74036E02 /* Build configuration list for PBXNativeTarget "Pods-JKAutoReleaseObject" */;
+			buildConfigurationList = 37EB30672933BD26113D951AC0ED9221 /* Build configuration list for PBXNativeTarget "Pods-JKAutoReleaseObject" */;
 			buildPhases = (
-				DF774CBE473B8D814605EC340E0C26C7 /* Sources */,
-				1902C0AB8EF59B843B9FF0AC0CB11244 /* Frameworks */,
+				3A1F0D7C340C57C21537786CA4ADDC18 /* Headers */,
+				E2AE23221DEED3C7DD43A0E570038AE0 /* Sources */,
+				0741474BC3DF3C42DA1386EDF75C686D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE5BFF7F91B124EC58633F57A3BF27DE /* PBXTargetDependency */,
+				D9DF933DB53462858FA812864F0B2A0A /* PBXTargetDependency */,
 			);
 			name = "Pods-JKAutoReleaseObject";
 			productName = "Pods-JKAutoReleaseObject";
@@ -226,45 +212,69 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03A569DFB9AFBDB882446987F162A9EA /* JKRetractableGCDDelay */,
-				18F14E8FCD69F18142C5D65D374AA2CE /* Pods-JKAutoReleaseObject */,
+				64815467B6BC03D86E2C5A1FEC6863D8 /* JKRetractableGCDDelay */,
+				A1AC41921144C84057FFBF9FCE1503FD /* Pods-JKAutoReleaseObject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DEA6BBD12D81E9E627E4A0DA5A4644AC /* Sources */ = {
+		C5EFBFB6E4B2C75AC9F0885C4A8A9935 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874E1AA9482838B77B6C3FD800C0CB4F /* JKRetractableGCDDelay-dummy.m in Sources */,
-				EBCE3C14A9FF08829BB3264D1317F9ED /* NSObject+GCDDelayTask.m in Sources */,
+				2D034B01FA254B16094BCE4101710443 /* JKRetractableGCDDelay-dummy.m in Sources */,
+				37113348FB1B4513CC33B4BE7C0FB516 /* NSObject+GCDDelayTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF774CBE473B8D814605EC340E0C26C7 /* Sources */ = {
+		E2AE23221DEED3C7DD43A0E570038AE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1939D6B24C7E48510290DC834C0E7DCB /* Pods-JKAutoReleaseObject-dummy.m in Sources */,
+				15EB468E5FC501CD2547856210B27029 /* Pods-JKAutoReleaseObject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EE5BFF7F91B124EC58633F57A3BF27DE /* PBXTargetDependency */ = {
+		D9DF933DB53462858FA812864F0B2A0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JKRetractableGCDDelay;
-			target = 03A569DFB9AFBDB882446987F162A9EA /* JKRetractableGCDDelay */;
-			targetProxy = 7941B662071EC1EF7C80CE3B2FB6B401 /* PBXContainerItemProxy */;
+			target = 64815467B6BC03D86E2C5A1FEC6863D8 /* JKRetractableGCDDelay */;
+			targetProxy = 431E3F8C01D93AF974768970A3503C3D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BE366B0ED6522145B9E49241EAED6B3 /* Debug */ = {
+		5CF59DE1F11D4F5D8BB10ACA0492BC2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32F3D185E6DA348A6DBCC4126694F8FC /* Pods-JKAutoReleaseObject.debug.xcconfig */;
+			baseConfigurationReference = 213C42056C5E237EFD9B7EEF958D7A21 /* JKRetractableGCDDelay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JKRetractableGCDDelay/JKRetractableGCDDelay-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JKRetractableGCDDelay;
+				PRODUCT_NAME = JKRetractableGCDDelay;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62C371E1351869D97F62CDFB058B4DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E737A790EAA8148AB1AB49C1D717CFA /* Pods-JKAutoReleaseObject.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -283,7 +293,52 @@
 			};
 			name = Debug;
 		};
-		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+		6BD873180E1AAD88B5639E5FF80F2B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213C42056C5E237EFD9B7EEF958D7A21 /* JKRetractableGCDDelay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JKRetractableGCDDelay/JKRetractableGCDDelay-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JKRetractableGCDDelay;
+				PRODUCT_NAME = JKRetractableGCDDelay;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9175A5C36E28501B7268FBC977E9E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C52B31C2CA46488B5CCF0BF229C5D5 /* Pods-JKAutoReleaseObject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE01AF5D395AE305A54D518A9B774D2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,8 +370,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -337,141 +450,17 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		3CAA5FF0857CDD509A2EC69A9FFEDFB8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 213C42056C5E237EFD9B7EEF958D7A21 /* JKRetractableGCDDelay.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JKRetractableGCDDelay/JKRetractableGCDDelay-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JKRetractableGCDDelay;
-				PRODUCT_NAME = JKRetractableGCDDelay;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		58459416A87E2843D3DFB009D3FC6CF5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 213C42056C5E237EFD9B7EEF958D7A21 /* JKRetractableGCDDelay.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JKRetractableGCDDelay/JKRetractableGCDDelay-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JKRetractableGCDDelay;
-				PRODUCT_NAME = JKRetractableGCDDelay;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		588B1697F9EF4B540828D8E05C6ED653 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B35DCCFF640324DF6681CDDBE7C0639E /* Pods-JKAutoReleaseObject.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -479,26 +468,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
-				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+				CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */,
+				BE01AF5D395AE305A54D518A9B774D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA857E434239F80D594F171B8160CB84 /* Build configuration list for PBXNativeTarget "JKRetractableGCDDelay" */ = {
+		37EB30672933BD26113D951AC0ED9221 /* Build configuration list for PBXNativeTarget "Pods-JKAutoReleaseObject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CAA5FF0857CDD509A2EC69A9FFEDFB8 /* Debug */,
-				58459416A87E2843D3DFB009D3FC6CF5 /* Release */,
+				62C371E1351869D97F62CDFB058B4DF5 /* Debug */,
+				B9175A5C36E28501B7268FBC977E9E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC7088CAAEE31E1B9E2017FC74036E02 /* Build configuration list for PBXNativeTarget "Pods-JKAutoReleaseObject" */ = {
+		850DDBE69383605285334D90C611382B /* Build configuration list for PBXNativeTarget "JKRetractableGCDDelay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BE366B0ED6522145B9E49241EAED6B3 /* Debug */,
-				588B1697F9EF4B540828D8E05C6ED653 /* Release */,
+				6BD873180E1AAD88B5639E5FF80F2B5C /* Debug */,
+				5CF59DE1F11D4F5D8BB10ACA0492BC2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
