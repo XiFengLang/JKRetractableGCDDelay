@@ -3,16 +3,16 @@
 https://github.com/Spaceman-Labs/Dispatch-Cancel)
 
 
-###CocoaPods
+### CocoaPods
 
 ```C
  source 'https://github.com/CocoaPods/Specs.git'
  
- pod 'JKRetractableGCDDelay', '~> 1.0.0'
+ pod 'JKRetractableGCDDelay', '~> 1.0.1'
 ```
 
 
-*. 使用performSelector执行延迟任务，以及取消延迟任务。
+* 使用performSelector执行延迟任务，以及取消延迟任务。
 
 ```Object-C
 	
@@ -22,7 +22,7 @@ https://github.com/Spaceman-Labs/Dispatch-Cancel)
     // [NSObject cancelPreviousPerformRequestsWithTarget:self];
 ```
 
-*. 使用dispatch_after执行延迟任务，但是系统没有提供取消任务的API，而dispatch_after可能会强引用外部对象，导致对象延迟释放，出现奇奇怪怪的问题。不过[Dispatch-Cancel](
+* 使用dispatch_after执行延迟任务，但是系统没有提供取消任务的API，而dispatch_after可能会强引用外部对象，导致对象延迟释放，出现奇奇怪怪的问题。不过[Dispatch-Cancel](
 https://github.com/Spaceman-Labs/Dispatch-Cancel)恰好解决了这个问题，有兴趣的可以看看源码。JKRetractableGCDDelay基于这个框架封装，提供了3种方法执行延迟任务。
 
 
