@@ -21,7 +21,7 @@ static inline NSMutableDictionary * JKGCDDelayTaskCachePool(void) {
 @implementation NSObject (GCDDelayTask)
 
 
-JKGCDDelayTaskBlock JK_GCDDelayTaskBlock(CGFloat delayInSeconds, dispatch_block_t block) {
+inline JKGCDDelayTaskBlock JK_GCDDelayTaskBlock(CGFloat delayInSeconds, dispatch_block_t block) {
     
     if (nil == block) {
         return nil;
@@ -63,7 +63,7 @@ JKGCDDelayTaskBlock JK_GCDDelayTaskBlock(CGFloat delayInSeconds, dispatch_block_
 
 
 
-void JK_CancelGCDDelayedTask(JKGCDDelayTaskBlock delayedHandle) {
+inline void JK_CancelGCDDelayedTask(JKGCDDelayTaskBlock delayedHandle) {
     if (nil == delayedHandle) {
         return;
     }
@@ -74,6 +74,14 @@ void JK_CancelGCDDelayedTask(JKGCDDelayTaskBlock delayedHandle) {
     delayedHandle = nil;
 }
 
+
+static inline void JK_DispatchAsyncInMainQueue(dispatch_block_t block) {
+    if (NSThread.isMainThread) {
+        block ? block() : NULL;
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}
 
 
 #pragma mark - 实例方法
@@ -95,30 +103,33 @@ void JK_CancelGCDDelayedTask(JKGCDDelayTaskBlock delayedHandle) {
 - (void)jk_excuteDelayTaskWithKey:(const char *)key
                    delayInSeconds:(CGFloat)delayInSeconds
                       inMainQueue:(dispatch_block_t)block {
-    /// 先取消相同Key的任务
-    [self jk_cancelGCDDelayTaskForKey:key ?: NSStringFromClass(self.class).UTF8String];
-    NSString * keyStr = key ? [NSString stringWithUTF8String:key] : NSStringFromClass(self.class);
-    
-    __block dispatch_block_t blockCopy = [block copy];
-    __block JKGCDDelayTaskBlock taskBlockCopy = nil;
-    
-    JKGCDDelayTaskBlock taskBlock = ^(BOOL cancel) {
-        if (NO == cancel && nil != blockCopy) {
-            dispatch_async(dispatch_get_main_queue(), blockCopy);
-        }
+    JK_DispatchAsyncInMainQueue(^{
+        /// 先取消相同Key的任务
+        [self jk_cancelGCDDelayTaskForKey:key ?: NSStringFromClass(self.class).UTF8String];
+        NSString * keyStr = key ? [NSString stringWithUTF8String:key] : NSStringFromClass(self.class);
         
-        blockCopy = nil;
-        taskBlockCopy = nil;
-        JKGCDDelayTaskCachePool()[keyStr] = nil;
-    };
-    taskBlockCopy = [taskBlock copy];
-    JKGCDDelayTaskCachePool()[keyStr] = taskBlockCopy;
-    
-    dispatch_time_t delayInNanoSeconds = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(delayInNanoSeconds, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        if (nil != taskBlockCopy) {
-            taskBlockCopy(NO);
-        }
+        __block dispatch_block_t blockCopy = [block copy];
+        __block JKGCDDelayTaskBlock taskBlockCopy = nil;
+        
+        JKGCDDelayTaskBlock taskBlock = ^(BOOL cancel) {
+            if (NO == cancel && nil != blockCopy) {
+                dispatch_async(dispatch_get_main_queue(), blockCopy);
+            }
+            
+            blockCopy = nil;
+            taskBlockCopy = nil;
+            JKGCDDelayTaskCachePool()[keyStr] = nil;
+        };
+        taskBlockCopy = [taskBlock copy];
+        JKGCDDelayTaskCachePool()[keyStr] = taskBlockCopy;
+        
+        dispatch_time_t delayInNanoSeconds = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        /// 如果放在其它队列，时间很短的情况下可能会出现野指针错误，‘blockCopy = nil;’
+        dispatch_after(delayInNanoSeconds, dispatch_get_main_queue(), ^{
+            if (nil != taskBlockCopy) {
+                taskBlockCopy(NO);
+            }
+        });
     });
 }
 
@@ -127,13 +138,14 @@ void JK_CancelGCDDelayedTask(JKGCDDelayTaskBlock delayedHandle) {
     if (!key) {
         return;
     }
-    NSString * keyStr = [NSString stringWithUTF8String:key];
-    JKGCDDelayTaskBlock taskBlock = JKGCDDelayTaskCachePool()[keyStr];
-    if (taskBlock) {
-        taskBlock(YES);
-        JKGCDDelayTaskCachePool()[keyStr] = nil;
-        taskBlock = nil;
-    }
+    JK_DispatchAsyncInMainQueue(^{
+        NSString * keyStr = [NSString stringWithUTF8String:key];
+        JKGCDDelayTaskBlock taskBlock = JKGCDDelayTaskCachePool()[keyStr];
+        if (taskBlock) {
+            taskBlock(YES);
+            JKGCDDelayTaskCachePool()[keyStr] = nil;
+        }
+    });
 }
 
 @end

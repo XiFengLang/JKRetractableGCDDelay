@@ -32,7 +32,7 @@ typedef void(^JKGCDDelayTaskBlock)(BOOL cancel);
  @param block 延时任务Block
  @return JKGCDDelayTaskBlock，通过JK_CancelGCDDelayedTask()取消延时任务。
  */
-JKGCDDelayTaskBlock JK_GCDDelayTaskBlock(CGFloat delayInSeconds, dispatch_block_t block);
+FOUNDATION_EXPORT JKGCDDelayTaskBlock JK_GCDDelayTaskBlock(CGFloat delayInSeconds, dispatch_block_t block);
 
 
 
@@ -41,7 +41,7 @@ JKGCDDelayTaskBlock JK_GCDDelayTaskBlock(CGFloat delayInSeconds, dispatch_block_
  
  @param delayedHandle JKGCDDelayTaskBlock
  */
-void JK_CancelGCDDelayedTask(JKGCDDelayTaskBlock delayedHandle);
+FOUNDATION_EXPORT void JK_CancelGCDDelayedTask(JKGCDDelayTaskBlock delayedHandle);
 
 
 
